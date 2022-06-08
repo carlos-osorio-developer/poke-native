@@ -1,25 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Navigation from './src/navigation/Navigation';
+
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View style={styles.container}>
-        <Text>I'm on the PokeDex!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <Navigation />
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

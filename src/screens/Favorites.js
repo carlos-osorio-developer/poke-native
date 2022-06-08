@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
+import { SafeAreaView, Text } from 'react-native'
 import React from 'react'
 
 export default function Favorites() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>Favorites</Text>
-    </View>
+    </SafeAreaView>
   )
 }

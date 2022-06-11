@@ -4,7 +4,9 @@ import React, { useState, useEffect } from 'react'
 
 export default function Pokedex() {  
   useEffect(() => {
-    fetchPokemons();
+    (async () => {
+      await fetchPokemons();
+    })()
   }, [])
   return (
     <SafeAreaView>

@@ -10,3 +10,13 @@ export async function getPokemonsAPI(){
     throw error
   }
 }
+
+export async function getPokemonDetailsAPI(url){
+  try {
+    const response = await fetch(url);
+    const result = await response.json();
+    return result;
+  } catch(error) {
+    throw error
+  }
+}
